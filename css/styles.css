@@ -1057,7 +1057,11 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	margin-bottom: 10px;
 }
 
-
+.zoom:hover {
+	-ms-transform: scale(1.6); /* IE 9 */
+	-webkit-transform: scale(1.6); /* Safari 3-8 */
+	transform: scale(1.6); 
+}
 /* @media querries */
 
 @media only screen and (max-width: 1266px) {
@@ -1084,8 +1088,3 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	}
 }
 
-.zoom:hover {
-	-ms-transform: scale(1.6); /* IE 9 */
-	-webkit-transform: scale(1.6); /* Safari 3-8 */
-	transform: scale(1.6); 
-}
