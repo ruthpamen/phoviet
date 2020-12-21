@@ -476,7 +476,9 @@ nav ul li a:hover::after{
 	text-align: center;
 }
 .img-list-food img {
-	width: 95px;
+	width: 97px;
+	height: 80px;
+
 	-webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     -moz-transition: all 0.3s;
