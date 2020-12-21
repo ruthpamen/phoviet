@@ -35,18 +35,18 @@
 
 <ul>
 	<li><a href="#">Home</a></li>
-	<li><a href="#">Recipes</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Contact</a></li>
+	<li><a href="#menu">Recipes</a></li>
+	<li><a href="#about">About</a></li>
+	<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
 <div class="header__text-box">
 	<h1 class="heading-primary">
-		<span class="heading-primary--main">Outdoors</span>
-		<span class="heading-primary--sub">is where life happens</span>
+		<span class="heading-primary--main">PHO VIET</span>
+		<span class="heading-primary--sub">Feine Asia Küche </span>
 	</h1>
-		<a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+		<a href="#menu" class="btn btn--white btn--animated">Anrufen und Bestellen</a>
 
 	</div>
 
@@ -63,7 +63,7 @@
 </header>
 
 <!-- Our Menu -->
-<section class="our-menu" >
+<section id="menu" class="our-menu" >
 	<div class="container">
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
@@ -88,6 +88,13 @@
 					<li class="nav-item">
 						<a class="nav-link" id="tab-private-dinner" data-toggle="tab" href="#private-dinner" role="tab" aria-controls="private-dinner"><strong>Private Dinner</strong></a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#lunch" role="tab" aria-controls="lunch" aria-expanded="true"><strong>Lunch</strong></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="tab-dinner" data-toggle="tab" href="#dinner" role="tab" aria-controls="dinner"><strong>Dinner</strong></a>
+					</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -101,9 +108,13 @@
 						<div class="col-md-10 col-lg-6">
 							<!-- item food -->
 							<div class="item-food row wow fadeInDown" data-wow-delay="0.7s">
-								<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.7s">
-									<img alt="food" src="images/pho-vit-10.jpg">
+								<div class="col-12 col-sm-2 img-list-food wow zoom " data-wow-delay="0.7s">
+											<img alt="food" src="images/pho-vit-10.jpg">
+									
+									</a>
+							
 								</div>
+							
 								<div class="col-12 col-sm-8 text-list-food ">
 										<div class="name-price row">
 											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">Pine nut sbrisalona</a></div>
@@ -863,12 +874,31 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
+
+<section id ="about" class="our-menu" >
+	<div class="container">
+		<!-- title our menu -->
+		<div class="wrap-title-our-menu row">
+			<div class="col-12 title-our-menu">
+				<p>
+					<strong> Anrufen - Bestellen - Abholen.<br>
+					Tel:08031 2307102.handy:01623249651am Busbahnhof - Innenstadt - In Rosenheim 
+				</strong></p>
+			</div>
+		</div>
+
+	</div>
+<p>
+	</p>
+</div>
+</section>
 
 
 	<!-- Banner -->
@@ -885,7 +915,7 @@
 	</div>
 
 
-<section class="our-menu" >
+<section id ="about" class="our-menu" >
 	<div class="container">
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
@@ -995,7 +1025,7 @@ Ihre PHO VIET freut sich bereits auf Ihren Besuch!
 
 
 <footer>
-	<div class="container">
+	<div id ="contact" class="container">
 		<div class="content-footer row">
 			<div class="column-footer col-lg-5 col-md-8 col-sm-7">
 				<h3>Contact information</h3>

@@ -168,7 +168,7 @@ line-height: 1.5;
 a{
 	text-decoration: none;
 	color: #eee;
-	;
+	
 }
 header{
 	width: 100%;
@@ -213,6 +213,8 @@ nav{
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 }
+
+
 
 .brand span{
 	color: #dc143c;
@@ -377,7 +379,7 @@ nav ul li a:hover::after{
 }
 .title-our-menu {
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e4e4e4;
 	margin-right: 0px;
@@ -420,14 +422,14 @@ nav ul li a:hover::after{
 	margin-left: 0px;
 }
 #food-menu {
-	width: 350px;
-	height: 40px;
+	width: 550px;
+	height: 50px;
 	margin: auto;
 }
 #food-menu li {
 	float: left;
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 17px;
 	list-style-type: none;
 	text-align: center;
 }
@@ -474,7 +476,7 @@ nav ul li a:hover::after{
 	text-align: center;
 }
 .img-list-food img {
-	width: 90px;
+	width: 95px;
 	-webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -491,7 +493,7 @@ nav ul li a:hover::after{
 .name-food,.name-food>a {
 	padding-top: 8px;
 	font-family: PlayfairDisplay-Bold;
-	font-size: 15px;
+	font-size: 20px;
 	color: #333333;
 }
 .hover-link-color:hover{
@@ -507,15 +509,15 @@ nav ul li a:hover::after{
 	padding: 0px;
 }
 .price-food {
-	padding-top: 8px;
+	padding-top: 20px;
 	font-family: PlayfairDisplay-Bold;
-	font-size: 15px;
+	font-size: 17px;
 	color: #333333;
 }
 .info-food {
 	padding-top: 8px;
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 16px;
 	color: #666666;
 }
 @media (max-width: 995px){
@@ -1082,3 +1084,8 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	}
 }
 
+.zoom:hover {
+	-ms-transform: scale(1.6); /* IE 9 */
+	-webkit-transform: scale(1.6); /* Safari 3-8 */
+	transform: scale(1.6); 
+}
