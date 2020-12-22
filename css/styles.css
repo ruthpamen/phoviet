@@ -1133,9 +1133,13 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 #prev{
   left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #next{
   right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media screen and (max-width: 500px){
   .image-box{width: 100%;}
@@ -1143,7 +1147,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 
 .karte{
- background-image: url('https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+ background-image: url("../images/wood-186304_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
