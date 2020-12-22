@@ -5,6 +5,24 @@
 	/*==============================================[ scroll one page ]==*/
 	$(document).ready(function() {
 
+		$('#next').click(function (){
+  
+			if($('.on-screen').next().length == 0){
+			  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen');
+			  $('.image-container').first('image-container').removeClass('out-screen').addClass('come-in on-screen');
+			}
+			else
+			  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen').next('.image-container').addClass('come-in on-screen');
+		  });
+		  $('#prev').click(function (){
+			
+			if($('.on-screen').prev().length == 0){
+			  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen');
+			  $('.image-container').last('image-container').removeClass('out-screen').addClass('come-in on-screen');
+			}
+			else
+			  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen').prev('.image-container').addClass('come-in on-screen');
+		  });
 		$('.home-onepage-menu-bar a, .home-onepage-menu-bar-top a, .home-onepage-menu-overlay a').on('click', function(event){
 			event.preventDefault();
 			$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
@@ -85,12 +103,32 @@
 
 })
 
-$('.popup-link').magnificPopup({
-	type: 'image',
-	mainClass: 'mfp-with-zoom', 
-	zoom: {
-	  enabled: true, 
-	  duration: 300, 
-	  easing: 'ease-in-out', 
+
+
+
+
+
+
+
+
+
+
+
+$('#next').click(function (){
+  
+	if($('.on-screen').next().length == 0){
+	  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen');
+	  $('.image-box').first('image-box').removeClass('out-screen').addClass('come-in on-screen');
 	}
+	else
+	  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen').next('.image-box').addClass('come-in on-screen');
+  });
+  $('#prev').click(function (){
+	
+	if($('.on-screen').prev().length == 0){
+	  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen');
+	  $('.image-box').last('image-box').removeClass('out-screen').addClass('come-in on-screen');
+	}
+	else
+	  $('.on-screen').removeClass('on-screen come-in').addClass('out-screen').prev('.image-box').addClass('come-in on-screen');
   });
