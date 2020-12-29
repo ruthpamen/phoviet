@@ -1,20 +1,56 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+/*
+COLORS:
 
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+/* 1 rem =10px;
+
+*/
 html{
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-
+    font-size: 62.5%; /* 100% = 16 px qui est le default value de la root mais on veut 10px*/
 }
 
+body{
+    font-family: "Lata",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+header{
+    height:80vh;/* vh die höhe des Element soll immer 95% sein auf der Viewport height */
+	background-image: linear-gradient(
+        to right bottom, rgba(213, 123, 111, 0.7),rgba(47, 49, 48, 0.7), #839280,#b43d28),url(../images/spaghetti.jpg) ;
+    background-size: cover;
+    background-position: top;/* L image en haut ne bouge pas */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	width: 100%;
+	overflow: hidden;
 
-
+}
+.header__logo-box{
+    position:absolute;
+    left: 4rem;
+    top: 4rem;
+}
+.header__logo{
+    height: 3.5rem;
+}
 .header__text-box{
     position: absolute;
-    top:60%;
+    top:40%;
     left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -28,9 +64,9 @@ html{
 }
 .heading-primary--main{
     display: block;
-    letter-spacing: 1.5rem;
-    font-weight: 700;
-    font-size: 2rem;
+    letter-spacing: 3.5rem;
+    font-weight: 400;
+    font-size: 3rem;
     animation-name: moveInLeft;/*we call the animation that we created*/
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -39,8 +75,8 @@ html{
 .heading-primary--sub{
     font-size: 2rem;
     display: block;
-    font-weight: 400;
-    letter-spacing:1rem;
+    font-weight: 700;
+    letter-spacing:1.75rem;
     animation-name: moveInRight;/*we call the animation that we created*/
     animation-duration: 2s;
     animation-timing-function: 1s ease-out;
@@ -135,32 +171,8 @@ html{
     animation-fill-mode: backwards;
 }
 
-/* Headings */
-
-.big-heading {
-font-family: "Montserrat-Black";
-font-size: 3.5rem;
-line-height: 1.5;
-}
-
-.section-heading {
-font-size: 3rem;
-line-height: 1.5;
-}
 
 
-
-.white-section{
-  padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-
-
-
-#map{
-	background-image: url("../images/tomate.jpg");
-}
 
 
 
@@ -170,14 +182,7 @@ a{
 	color: #eee;
 	
 }
-header{
-	width: 100%;
-	height: 80vh;
-	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("../images/spaghetti.jpg") center no-repeat;
-	background-size: cover;
-	position: relative;
-  overflow: hidden;
-}
+
 
 .container{
 	max-width: 120rem;
@@ -371,7 +376,11 @@ nav ul li a:hover::after{
 
 
 /*=================================================================== Our Menu ===*/
-.our-menu {background-color: white;}
+.our-menu {
+	background-color: #f7f7f7;
+}
+
+
 /*------------------------------------------------------------------- title our menu ---*/
 .wrap-title-our-menu{
 	margin-right: 0px;
@@ -379,7 +388,7 @@ nav ul li a:hover::after{
 }
 .title-our-menu {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 65px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e4e4e4;
 	margin-right: 0px;
@@ -397,196 +406,6 @@ nav ul li a:hover::after{
 	font-family: PlayfairDisplay-Bold;
 	font-size: 50px;
 }
-
-/*------------------------------------------------------------------- food menu ---*/
-.nav-tabs .nav-link {
-   border: none;
-   border-top-left-radius: 0;
-   border-top-right-radius: 0;
-}
-.nav-link {
-    display: inline; 
-    padding: 0;
-}
-.nav-tabs .nav-link.active {
-    background-color: transparent;
-    border-color: transparent;
-    color: #e52233 !important;
-}
-.nav-tabs {
-    border-bottom: none;
-}
-.wrap-food-menu{
-	border-bottom: 1px solid #e4e4e4;
-	margin-right: 0px;
-	margin-left: 0px;
-}
-#food-menu {
-	width: 550px;
-	height: 50px;
-	margin: auto;
-}
-#food-menu li {
-	float: left;
-	font-family: OpenSans;
-	font-size: 17px;
-	list-style-type: none;
-	text-align: center;
-}
-#food-menu a:hover{text-decoration: none; color: #e52233;}
-#food-menu a{
-	padding-left: 16px;
-	padding-right: 17px;
-	line-height: 40px;
-	color: #808080;
-	border-right: 1px solid #e4e4e4;
-}
-#food-menu li:first-child>a{
-	padding-left: 10px;
-}
-#food-menu li:last-child>a{
-	padding-right: 10px;
-	border-right: none;
-}
-@media (max-width: 780px){
-	#food-menu a{
-		padding-left: 5px !important;
-		padding-right: 5px !important;
-	}
-	#food-menu {
-		width: 280px !important;
-	}
-}
-/*------------------------------------------------------------------- list food ---*/
-.wrap-list-food {
-	padding-top: 50px;
-	padding-bottom: 100px;
-}
-.list-food>.col-md-10 {
-	margin: auto;
-}
-
-.list-food>div {
-	padding-top: 12px;
-	padding-bottom: 12px;
-}
-
-.item-food {}
-.img-list-food {
-	text-align: center;
-}
-.img-list-food img {
-	width: 97px;
-	height: 80px;
-
-	-webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.img-list-food img:hover {
-	transform: translate(0,-4px);
-	box-shadow: 3px 4px 10px -5px #505050;
-	-moz-box-shadow: 3px 4px 10px -5px #505050;
-    -webkit-box-shadow: 3px 4px 10px -5px #505050;
-    -o-box-shadow: 3px 4px 10px -5px #505050;
-    -ms-box-shadow: 3px 4px 10px -5px #505050;
-}
-.name-food,.name-food>a {
-	padding-top: 8px;
-	font-family: PlayfairDisplay-Bold;
-	font-size: 20px;
-	color: #333333;
-}
-.hover-link-color:hover{
-	text-decoration: none;
-	color: #e52233;
-}
-.line-food{
-	border-bottom: 1px solid #c9c9c9;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-bottom: 5px;
-	min-width: 0px;
-	padding: 0px;
-}
-.price-food {
-	padding-top: 20px;
-	font-family: PlayfairDisplay-Bold;
-	font-size: 17px;
-	color: #333333;
-}
-.info-food {
-	padding-top: 8px;
-	font-family: OpenSans;
-	font-size: 16px;
-	color: #666666;
-}
-@media (max-width: 995px){
-	.img-list-food>a>img{float: right !important;}
-	.img-list-food, .text-list-food {
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
-	
-}
-@media (max-width: 576px){
-	.img-list-food > a > img {float: unset !important;}
-
-	.img-list-food, .text-list-food, .price-food {
-		text-align: center !important;
-	}
-	
-	.item-food {border-bottom: 1px solid #e4e4e4;}
-	.line-food {display: none;}
-	
-}
-
-/*------------------------------------------------------------------- animation list food ---*/
-
-@keyframes lineRun {
-	0% {visibility: hidden;}
-	29% {visibility: hidden;}
-	30% {visibility: visible; width: 0%;}
-	45% {width: 50%;}
-	60% {width: 100%; }
-	100% {width: 100%;}
-}
-@keyframes nameRun {
-	0% {color: #333333;}
-	15% {color: #e52233;}
-	100% {color: #e52233;}
-}
-@keyframes priceRun {
-	0% {color: #333333;}
-	60% {color: #333333;}
-	80% {color: #e52233;}
-	100% {color: #e52233;}
-}
-.line-food {
-	position: relative;
-}
-
-.line-run {
-	width: 1px;
-	height: 1px;
-	position: absolute;
-	left: 0;
-	bottom: -1px;
-	background-color: #e52233;
-	animation: lineRun 1s linear 1;
-}
-.name-run>a {
-	animation: nameRun 1s linear 1;
-}
-.price-run {
-	animation: priceRun 1s linear 1;
-}
-/*................................................................... Our Menu ...*/
-
-
-
-
 
 
 
@@ -699,16 +518,24 @@ footer ul li a:hover {
 
 /*................................................................... Footer ...*/
 
+#gallery{
+	margin-top: -20vh;
+	background-color: #f7f7f7;
+	padding: 25rem 0;
+
+
+
+}
+
+
+
 
 
 
 
 /*------------------------------------------------------------------- Intro ---*/
 .wrap-intro {
-	background-image: url('/images/tomate.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+
 	padding-top: 105px;
 	padding-bottom: 85px;
 }
@@ -752,14 +579,17 @@ footer ul li a:hover {
 }
 
 /*------------------------------------------------------------------- Map ---*/
-.wrap-map {
-	background-image: url('/images/tomate.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+
+#map{
+	background-image: linear-gradient(
+        to right bottom, rgba(179, 29, 10, 0.7),rgba(221, 67, 20, 0.7), #839280,#b43d28),url(../images/wood-186304_1920.jpg) ;
+    background-size: cover;  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 15px;
 }
+
 .text-map {padding-top: 20px;}
 .text-map h3 {
 	font-family: OpenSans;
@@ -798,48 +628,11 @@ footer ul li a:hover {
 		margin-right: auto;
 	}
 }
-/*=================================================================== Button Back to top ===*/
-.btn-back-to-top {
-	display: none;
-	position: fixed;
-	width: 50px;
-	height: 35px;
-	bottom: 45px;
-	right: 50px;
-	background-color: black;
-	opacity: 0.5;
-	justify-content: center;
-	align-items: center;
-	z-index: 100000;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-}
 
-.symbol-btn-back-to-top {
-	font-size: 30px;
-	color: white;
-	line-height: 1em;
-}
-
-.btn-back-to-top:hover {
-	height: 48px;
-	opacity: 0.8;
-	cursor: pointer;
-	background-color: #e52233;
-}
-
-@media (max-width: 576px) {
-	.btn-back-to-top {
-		bottom: 15px;
-		right: 20px;
-	}
-}
 /*=================================================================== Banner ===*/
 
 .parallax-banner{
-	background-image: url("/images/banner-home-page-01.jpg");
+	background-color: #f7f7f7;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1129,30 +922,123 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   background: #F39C12;
   border: none;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
 }
 #prev{
   left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 2rem;
+
 }
 #next{
   right: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 2rem;
 }
 @media screen and (max-width: 500px){
   .image-box{width: 100%;}
 }
 
-
 .karte{
- background-image: url("../images/wood-186304_1920.jpg");
-  background-repeat: no-repeat;
+ background-image: linear-gradient(
+        to right bottom, rgba(179, 29, 10, 0.7),rgba(221, 67, 20, 0.7), #839280,#b43d28),url(../images/wood-186304_1920.jpg) ;
+ background-size: cover;  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 120vh;
+  height: 90vh;
   padding: 0;
   overflow: hidden;
 }
 
+
+
+
+@media screen and (min-width: 800px) {
+	.karte{
+	height: 1050px;
+	}
+	}
+	
+	
+
+
+
+
+
+
+
+#demo {
+	height:100%;
+	position:relative;
+	overflow:hidden;
+  }
+  
+  
+  .green{
+	background-color:#6fb936;
+  }
+		  .thumb{
+			  margin-bottom: 30px;
+		  }
+		  
+		  .page-top{
+			  margin-top:85px;
+		  }
+  
+	 
+  img.zoom {
+	  width: 70%;
+	  height: 200px;
+	  border-radius:5px;
+	  object-fit:cover;
+	  -webkit-transition: all .3s ease-in-out;
+	  -moz-transition: all .3s ease-in-out;
+	  -o-transition: all .3s ease-in-out;
+	  -ms-transition: all .3s ease-in-out;
+  }
+		  
+   
+  .transition {
+	  -webkit-transform: scale(1.2); 
+	  -moz-transform: scale(1.2);
+	  -o-transform: scale(1.2);
+	  transform: scale(1.2);
+  }
+	  .modal-header {
+	 
+	   border-bottom: none;
+  }
+	  .modal-title {
+		  color:#000;
+	  }
+	  .modal-footer{
+		display:none;  
+	  }
+  
+
+  
+  
+	  .caption {
+		padding-top:5px
+	  }
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
