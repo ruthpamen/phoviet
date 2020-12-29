@@ -29,17 +29,256 @@ body{
     padding: 3rem;
     box-sizing: border-box;
 }
-header{
-    height:80vh;/* vh die höhe des Element soll immer 95% sein auf der Viewport height */
+
+	
+/* Navigation Bar */
+
+.navbar {
+	padding: 0 0 4.5rem;
+	padding-top:15px;
+	}
+
+	
+	.navbar-brand {
+	font-family: "Ubuntu";
+	font-size: 2.5rem;
+	font-weight: bold;
+	}
+	
+	.nav-item {
+	padding: 0 18px;
+	}
+	
+	.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff;
+	font-weight:400px;
+	}
+	
+	
+	.nav-link {
+	
+	font-family: "Montserrat-Light";
+	color:white;
+	font-size: 1.5rem;
+	}
+	
+	
+	/*Logo*/
+	.logo-image{
+	width:50%;
+	border-radius:100px;
+	}
+	
+	
+	.section-nav {
+	height:65vh;/* vh die höhe des Element soll immer 95% sein auf der Viewport height */
 	background-image: linear-gradient(
         to right bottom, rgba(213, 123, 111, 0.7),rgba(47, 49, 48, 0.7), #839280,#b43d28),url(../images/spaghetti.jpg) ;
     background-size: cover;
-    background-position: top;/* L image en haut ne bouge pas */
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-	width: 100%;
-	overflow: hidden;
+		background-position: top;/* L image en haut ne bouge pas */
+	  width: 100%;
+	  overflow: hidden;
+	
+	}
+	
+	
 
-}
+
+
+
+
+
+	nav{
+		padding-top: 5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-transform: uppercase;
+	  font-size: 1.2rem;
+	  margin-left: 40px;
+	   margin-right: 50px;
+	}
+	
+	.brand{
+		font-size: 3rem;
+		font-weight: 300;
+		transform: translateX(-100rem);
+		animation: slideIn .5s forwards;
+	}
+	
+	
+	
+	.brand span{
+		color: #dc143c;
+	}
+	.brand a{
+		color: white;
+	}
+	@media screen and (min-width: 600px) {
+	nav ul{
+		display: flex;
+	}
+	
+	}
+	@media screen and (max-width: 500px) {
+	
+	nav ul {
+		display: block;
+	}
+	}
+	nav ul li{
+		list-style: none;
+		transform: translateX(100rem);
+	  animation: slideIn .5s forwards;
+	  
+	}
+	
+	nav ul li:nth-child(1){
+		animation-delay: 0s;
+	}
+	
+	nav ul li:nth-child(2){
+		animation-delay: .5s;
+	}
+	
+	nav ul li:nth-child(3){
+		animation-delay: 1s;
+	}
+	
+	nav ul li:nth-child(4){
+		animation-delay: 1.5s;
+	}
+	
+	nav ul li a{
+		padding: 1rem 0;
+		margin: 0 3rem;
+		position: relative;
+	  letter-spacing: 2px;
+	  color: #eee !important;
+	
+	}
+	
+	nav ul li a:last-child{
+		margin-right: 0;
+	}
+	
+	nav ul li a::before,
+	nav ul li a::after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: crimson;
+		left: 0;
+		transform: scaleX(0);
+		transition: all .5s;
+	}
+	
+	nav ul li a::before{
+		top: 0;
+		transform-origin: left;
+	}
+	
+	nav ul li a::after{
+		bottom: 0;
+		transform-origin: right;
+	}
+	
+	.overlay{
+		background-color: rgba(0,0,0,.95);
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		transition: opacity 650ms;
+		transform: scale(0);
+		opacity: 0;
+	  display: none;
+	}
+	
+	nav ul li a:hover::before,
+	nav ul li a:hover::after{
+		transform: scaleX(1);
+	}
+	
+	@keyframes slideIn {
+		from{
+	
+		}
+		to{
+			transform: translateX(0);
+		}
+	}
+	
+	@media screen and (max-width: 700px){
+	
+		.menu-toggle{
+			display: block;
+		}
+	
+		nav{
+			padding-top: 0;
+			display: none;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 100vh;
+			text-align: center;
+		}
+	
+		nav ul{
+			flex-direction: column;
+		}
+	
+		nav ul li{
+			margin-top: 5rem;
+		}
+	
+		nav ul li a{
+			margin: 0;
+			font-size: 2.5rem;
+		}
+	
+		.brand{
+			font-size: 5rem;
+		}
+	  
+	  .overlay.menu-open,
+	  nav.menu-open{
+		  display: flex;
+		  transform: scale(1);
+		  opacity: 1;
+	  }
+	  
+	}
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header__logo-box{
     position:absolute;
     left: 4rem;
@@ -50,7 +289,7 @@ header{
 }
 .header__text-box{
     position: absolute;
-    top:40%;
+    top:70%;
     left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -172,204 +411,6 @@ header{
 }
 
 
-
-
-
-
-
-a{
-	text-decoration: none;
-	color: #eee;
-	
-}
-
-
-.container{
-	max-width: 120rem;
-	width: 90%;
-	margin: 0 auto;
-}
-
-.menu-toggle{
-	position: fixed;
-	top: 2.5rem;
-	right: 2.5rem;
-	color: #eeeeee;
-	font-size: 3rem;
-	cursor: pointer;
-	z-index: 1000;
-	display: none;
-}
-
-nav{
-	padding-top: 5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
-  font-size: 1.2rem;
-  margin-left: 40px;
-   margin-right: 50px;
-}
-
-.brand{
-	font-size: 3rem;
-	font-weight: 300;
-	transform: translateX(-100rem);
-	animation: slideIn .5s forwards;
-}
-
-
-
-.brand span{
-	color: #dc143c;
-}
-
-nav ul{
-	display: flex;
-}
-
-nav ul li{
-	list-style: none;
-	transform: translateX(100rem);
-  animation: slideIn .5s forwards;
-  
-}
-
-nav ul li:nth-child(1){
-	animation-delay: 0s;
-}
-
-nav ul li:nth-child(2){
-	animation-delay: .5s;
-}
-
-nav ul li:nth-child(3){
-	animation-delay: 1s;
-}
-
-nav ul li:nth-child(4){
-	animation-delay: 1.5s;
-}
-
-nav ul li a{
-	padding: 1rem 0;
-	margin: 0 3rem;
-	position: relative;
-  letter-spacing: 2px;
-  color: #eee !important;
-
-}
-
-nav ul li a:last-child{
-	margin-right: 0;
-}
-
-nav ul li a::before,
-nav ul li a::after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: crimson;
-	left: 0;
-	transform: scaleX(0);
-	transition: all .5s;
-}
-
-nav ul li a::before{
-	top: 0;
-	transform-origin: left;
-}
-
-nav ul li a::after{
-	bottom: 0;
-	transform-origin: right;
-}
-
-.overlay{
-	background-color: rgba(0,0,0,.95);
-	position: fixed;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	transition: opacity 650ms;
-	transform: scale(0);
-	opacity: 0;
-  display: none;
-}
-
-nav ul li a:hover::before,
-nav ul li a:hover::after{
-	transform: scaleX(1);
-}
-
-@keyframes slideIn {
-	from{
-
-	}
-	to{
-		transform: translateX(0);
-	}
-}
-
-@media screen and (max-width: 700px){
-
-	.menu-toggle{
-		display: block;
-	}
-
-	nav{
-		padding-top: 0;
-		display: none;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		height: 100vh;
-		text-align: center;
-	}
-
-	nav ul{
-		flex-direction: column;
-	}
-
-	nav ul li{
-		margin-top: 5rem;
-	}
-
-	nav ul li a{
-		margin: 0;
-		font-size: 2.5rem;
-	}
-
-	.brand{
-		font-size: 5rem;
-	}
-  
-  .overlay.menu-open,
-  nav.menu-open{
-	  display: flex;
-	  transform: scale(1);
-	  opacity: 1;
-  }
-  
-}
-
-
-.begin{
-  text-align: center;
-  padding-top: 10%;
-  font-size: 3.5rem;
-}
-.name{
-    font-size: 3.5rem;
-}
-
-
-.lead{
-  text-align: center;
-}
 
 
 
@@ -519,9 +560,7 @@ footer ul li a:hover {
 /*................................................................... Footer ...*/
 
 #gallery{
-	margin-top: -20vh;
 	background-color: #f7f7f7;
-	padding: 25rem 0;
 
 
 
@@ -990,7 +1029,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	 
   img.zoom {
 	  width: 70%;
-	  height: 200px;
+	  height: 130px;
 	  border-radius:5px;
 	  object-fit:cover;
 	  -webkit-transition: all .3s ease-in-out;
