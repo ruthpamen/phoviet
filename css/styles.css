@@ -52,13 +52,23 @@ body{
 	}
 	
 	
+@media screen and (min-width: 800px) {
 	.nav-link {
 	
 	font-family: "Montserrat-Light";
 	color:white;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	}
+}
 	
+@media screen and (max-width: 600px) {
+	.nav-link {
+	
+	font-family: "Montserrat-Light";
+	color:white;
+	font-size: 2.5rem;
+	}
+}
 	
 header{
     height:80vh;/* vh die höhe des Element soll immer 95% sein auf der Viewport height */
