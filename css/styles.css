@@ -567,27 +567,28 @@ footer ul li a:hover {
 /*------------------------------------------------------------------- Intro ---*/
 .wrap-intro {
 
-	padding-top: 105px;
+	padding-top: 25px;
 	padding-bottom: 85px;
 }
 .text-intro {padding-top: 20px;}
 .text-intro h3 {
-	font-family: OpenSans;
+    font-family: "Lata",sans-serif;
+	
 	font-size: 14px;
-	color: #666666;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 }
 .text-intro h2 {
-	font-family: PlayfairDisplay-Bold;
+	font-family: "Lata",sans-serif;
+
 	font-size: 50px;
-	color: #333333;
+
 	margin-bottom: 40px;
 }
 .text-intro p {
-	font-family: OpenSans;
+	font-family: "Lata",sans-serif;
+
 	font-size: 14px;
-	color: #666666;
 	line-height: 1.8;
 }
 
@@ -595,9 +596,10 @@ footer ul li a:hover {
 .pic-intro {
 	width: 100%;
 	overflow: hidden;
+	display: flex;
 }
 .pic-intro img{
-	width: 100%;
+	width: 60%;
 	
 }
 
