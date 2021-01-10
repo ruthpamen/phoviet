@@ -1062,6 +1062,225 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 
 
+/*=================================================================== Our Menu ===*/
+.our-menu {background-color: white;}
+/*------------------------------------------------------------------- title our menu ---*/
+.wrap-title-our-menu{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.title-our-menu {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e4e4e4;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.title-our-menu > h6{
+	text-transform: uppercase;
+	color: #808080;
+	font-family: OpenSans;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+}
+.title-our-menu > h2{
+	color: #333333;
+	font-family: PlayfairDisplay-Bold;
+	font-size: 50px;
+}
+
+/*------------------------------------------------------------------- food menu ---*/
+.nav-tabs .nav-link {
+   border: none;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
+.nav-link {
+    display: inline; 
+    padding: 0;
+}
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: transparent;
+    color: #e52233 !important;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.wrap-food-menu{
+	border-bottom: 1px solid #e4e4e4;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#food-menu {
+	height: 40px;
+	margin: auto;
+}
+#food-menu li {
+	float: left;
+	font-family: OpenSans;
+	font-size: 14px;
+	list-style-type: none;
+	text-align: center;
+}
+#food-menu a:hover{text-decoration: none; color: #e52233;}
+#food-menu a{
+	padding-left: 16px;
+	padding-right: 17px;
+	line-height: 40px;
+	color: #808080;
+	border-right: 1px solid #e4e4e4;
+}
+#food-menu li:first-child>a{
+	padding-left: 10px;
+}
+#food-menu li:last-child>a{
+	padding-right: 10px;
+	border-right: none;
+}
+@media (max-width: 780px){
+	#food-menu a{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	#food-menu {
+		width: 280px !important;
+	}
+}
+/*------------------------------------------------------------------- list food ---*/
+.wrap-list-food {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.list-food>.col-md-10 {
+	margin: auto;
+}
+
+.list-food>div {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.item-food {}
+.img-list-food {
+	text-align: center;
+}
+.img-list-food img {
+	width: 90px;
+	-webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.img-list-food img:hover {
+	transform: translate(0,-4px);
+	box-shadow: 3px 4px 10px -5px #505050;
+	-moz-box-shadow: 3px 4px 10px -5px #505050;
+    -webkit-box-shadow: 3px 4px 10px -5px #505050;
+    -o-box-shadow: 3px 4px 10px -5px #505050;
+    -ms-box-shadow: 3px 4px 10px -5px #505050;
+}
+.name-food,.name-food>a {
+	padding-top: 8px;
+	font-family: PlayfairDisplay-Bold;
+	font-size: 15px;
+	color: #333333;
+}
+.hover-link-color:hover{
+	text-decoration: none;
+	color: #e52233;
+}
+.line-food{
+	border-bottom: 1px solid #c9c9c9;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	min-width: 0px;
+	padding: 0px;
+}
+.price-food {
+	padding-top: 8px;
+	font-family: PlayfairDisplay-Bold;
+	font-size: 15px;
+	color: #333333;
+}
+.info-food {
+	padding-top: 8px;
+	font-family: OpenSans;
+	font-size: 14px;
+	color: #666666;
+}
+@media (max-width: 995px){
+	.img-list-food>a>img{float: right !important;}
+	.img-list-food, .text-list-food {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	
+}
+@media (max-width: 576px){
+	.img-list-food > a > img {float: unset !important;}
+
+	.img-list-food, .text-list-food, .price-food {
+		text-align: center !important;
+	}
+	
+	.item-food {border-bottom: 1px solid #e4e4e4;}
+	.line-food {display: none;}
+	
+}
+
+/*------------------------------------------------------------------- animation list food ---*/
+
+@keyframes lineRun {
+	0% {visibility: hidden;}
+	29% {visibility: hidden;}
+	30% {visibility: visible; width: 0%;}
+	45% {width: 50%;}
+	60% {width: 100%; }
+	100% {width: 100%;}
+}
+@keyframes nameRun {
+	0% {color: #333333;}
+	15% {color: #e52233;}
+	100% {color: #e52233;}
+}
+@keyframes priceRun {
+	0% {color: #333333;}
+	60% {color: #333333;}
+	80% {color: #e52233;}
+	100% {color: #e52233;}
+}
+.line-food {
+	position: relative;
+}
+
+.line-run {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	background-color: #e52233;
+	animation: lineRun 1s linear 1;
+}
+.name-run>a {
+	animation: nameRun 1s linear 1;
+}
+.price-run {
+	animation: priceRun 1s linear 1;
+}
+/*................................................................... Our Menu ...*/
+
+
+
+
+
+
+
+
+
 
 
 
