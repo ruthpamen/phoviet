@@ -269,21 +269,8 @@ html {
   
   }
  
-.header__text-box{
-    position: absolute;
-    top:60%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-}
-.heading-primary{
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden; /*to stop the shaking after the animation*/
-    margin-bottom: 6rem;
-}
-.heading-primary--main{
+  .heading-primary--main{
+	  text-transform: uppercase;
     display: block;
     letter-spacing: 1rem;
     font-weight: 700;
@@ -294,10 +281,10 @@ html {
 
 }
 .heading-primary--sub{
-    font-size: 1.5rem;
+	padding-top: 30px;
+    font-size: 2rem;
     display: block;
-    font-weight: 700;
-    letter-spacing:0.5rem;
+    font-weight: 400;
     animation-name: moveInRight;/*we call the animation that we created*/
     animation-duration: 2s;
     animation-timing-function: 1s ease-out;
@@ -341,57 +328,6 @@ html {
         transform: translateX(0);
     }
 }
-.btn:link,
-.btn:visited{
-    border-radius: 10rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    transition: all 2s;
-    position: relative;
-    font-size:1.6rem;
-}
-.btn:hover{
-    transform: translateY(-3rem);
-    box-shadow: 0 1rem 2rem #00000033;
-}
-.btn:active{
-    transform: translateY(-1rem);
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
-
-}
-.btn--white{
-    background:#8B0000;
-    color:#fff;
-}
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    top:0 ;
-    left:0 ;
-    position: absolute;
-    border-radius: 10rem;
-    z-index: -1;
-    transition: all 2s;
-
-
-}
-.btn-white::after{
-    background-color: white;
-}
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);/*scale increase the element*/
-    opacity: 0;
-}
-
-.btn--animated{
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-}
-
   
   /* full-width-img */
   .full-width-img {
@@ -480,7 +416,20 @@ html {
 	color: #fff;
   
   }
+  .btn-header{
+	  border-radius: 20px;
+	font-size: 1em;
+	color: #fff;
+	background:#ff0157 ;
+	display: inline-block;
+	padding: 15px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
   
+  }
   .btn{
 	font-size: 1em;
 	color: #fff;
@@ -642,7 +591,7 @@ footer ul li a:hover {
 
 /*................................................................... Footer ...*/
 
-#gallery{
+#menu{
 	background-color: #f7f7f7;
 
 
