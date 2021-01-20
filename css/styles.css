@@ -269,7 +269,9 @@ html {
   
   }
  
-
+.about-text{
+	font-size: 1.5rem;
+}
   
   /* full-width-img */
   .full-width-img {
@@ -441,13 +443,13 @@ footer ul li {
 	list-style-type: none;
 	color: #c6c6c6;
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 2.14;
 }
 footer ul li a {
 	color: #c6c6c6;
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 2.14;
 }
 footer ul li a:hover {
@@ -1095,7 +1097,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 #food-menu li {
 	float: left;
 	font-family: OpenSans;
-	font-size: 18px;
+	font-size: 1.2rem;
 	list-style-type: none;
 	text-align: center;
 }
@@ -1270,6 +1272,8 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 .menu-price {
 	font-size: 16px;
 	margin: 0;
+	color: green;
+    font-weight: bold;
 }
 
 .menu-detail {
