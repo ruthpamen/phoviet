@@ -3,6 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  
+
+<meta name="description" content="Feine asia Küche - Partyservice - alle Speisen auch zum Mitnehmen - Anrufen - Bestellen - Abholen. Am Busbahnhof - Innenstadt - In Rosenheim ">
+<meta name="keywords" content="Gastronomie, Restaurant, Asiatisches Restaurant, Sushi Lieferservice, Vegetarisches Restaurant, Vietnamesisches Restaurant,Thai Restaurant">
+<meta name="author" content="PHO VIET Restaurant">
   <title>PHO VIET Restaurant</title>
 
   <!-- Google Fonts -->
@@ -29,42 +34,67 @@
 
 <body>
 
-  <header>
-	  <div class="container">
-	  <nav class="navbar navbar-expand-lg navbar-dark">
+ 
+    <header>
+        <div class="container">
+    
+            <h1 class="logo">
+                <span id="logo-first">PHỞ</span> 
+                <span id="logo-last">VIỆT</span>
+            </h1>
+    
+            <!-- i elements are for font awesome icons home, info, briefcase, envelope -->
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home site-nav-icon"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-info site-nav-icon"></i>Menü</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-briefcase site-nav-icon"></i>Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope site-nav-icon"></i>Über Uns</a>
+					</li>
+					<li>
+                        <a href="#">
+                            <i class="fa fa-envelope site-nav-icon"></i>Location</a>
+					</li>
+					
+                </ul>
+            </nav>
+    
+            <!-- Menu btn that toggles onClick and changes appearance ( .menu-toggle CSS ) -->
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    <section class="full-width-img">
+        
+
+            <div class="content">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">vietnamesische küche</span>
+					<span class="heading-primary--sub"style="padding-top:30px">fein, lecker und schnell</span>
+				</h1>
+					<a href="#" class="btn btn--white btn--animated">Menü</a>
+        
+            </div>
+        
+    
+    </section>
+   
 
 
 
-<h1 class="brand"> <a href="index.html">PHO<span>V</span>IET</a></h1>
 
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" style="padding:20px;">
-	<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-  <ul class="navbar-nav ml-auto">
-	<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-	<li class="nav-item"><a class="nav-link" href="#speisekarte">Speisekarte</a></li>
-	<li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-	<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-	<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
-</div>
-</nav>
-<div class="header__logo-box">
-	<img src="images/logo.jpg" alt="Logo" class="header__logo">
-</div>
-<div class="header__text-box">
-	<h1 class="heading-primary">
-		<span class="heading-primary--main">PHO VIET</span>
-		<span class="heading-primary--sub">Feine Asia Küche </span>
-	</h1>
-		<a href="#speisekarte" class="btn btn--white btn--animated">Anrufen und Bestellen</a>
-
-	</div>
-</div>
-</header>
 
 <!-- Our Menu -->
 <section  id ="gallery" class="our-menu" >
@@ -72,8 +102,12 @@
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
 			<div class="col-12 title-our-menu">
-				<h2>Our Menus</h2>
+				<h2>Unsere Menüs</h2>
+				<p class="btn" ><i class="fas fa-phone-volume"></i><span style="margin-left: 10px;">08031 2307102</span><i class="fas fa-phone-volume" style="margin-left: 10px;"></i><span style="margin-left: 10px;">01623249651 </span></p>
+
 			</div>
+			
+			
 		</div>
 
 		<!-- food menu -->
@@ -81,16 +115,21 @@
 			<div id="food-menu">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active" id="home-tab " data-toggle="tab" href="#lunch" role="tab" aria-controls="lunch" aria-expanded="true"><strong>Menu</strong></a>
+						<a class="nav-link active" id="home-menu1 " data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-expanded="true"><strong>Gebratene Nudeln</strong></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="tab-private-dinner" data-toggle="tab" href="#private-dinner" role="tab" aria-controls="private-dinner" ><strong>Box</strong></a>
+						<a class="nav-link" id="tab-box" data-toggle="tab" href="#box" role="tab" aria-controls="box" ><strong>Box</strong></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="tab-dinner" data-toggle="tab" href="#dinner" role="tab" aria-controls="dinner"><strong>Vorspeisen</strong></a>
+						<a class="nav-link" id="tab-suppe" data-toggle="tab" href="#suppe" role="tab" aria-controls="suppe" ><strong>Suppen</strong></a>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link" id="tab-vorspeise" data-toggle="tab" href="#vorspeise" role="tab" aria-controls="vorspeise"><strong>Vorspeisen</strong></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="tab-dessert" data-toggle="tab" href="#dessert" role="tab" aria-controls="dessert"><strong>Spezialitäten des Hauses</strong></a>
+						<a class="nav-link" id="tab-spezilitaet" data-toggle="tab" href="#spezialitaet" role="tab" aria-controls="spezialitaet"><strong>Spezialitäten des Hauses</strong></a>
 					</li>
 				
 					
@@ -98,1389 +137,87 @@
 				</ul>
 			</div>
 		</div>
-
-
-
-
-
+	
 
 		<!-- list food -->
-		<div class="tab-content" id="myTabContent">
+<div class="tab-content" id="myTabContent">
 
-<!-- Menu -->
-<div class="tab-pane fade show active" id="lunch" role="tabpanel" aria-labelledby="home-tab">
+  <!-- Menu -->
+   <div class="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="home-menu1">
 
+        <div class="row" style="padding-top:30px">
+		     <div class="col-sm-2">
 
-	<section id="popular" class="module">
-		<div class="container">
-	
+			<img  class="zoom img-fluid " src="images/gebratene-nudeln.PNG" alt="" width="120">
 			
-			
-			
-			<div class="row" style="padding-top:30px">
-				<div class="col-sm-2">
-	
-				
-					<img  class="zoom img-fluid " src="images/pho-vit-10.jpg" alt="" width="120">
-					<h3 class="module-subtitle">Our most popular menu</h3>
-				
-					<img src="images/pho-vit-10.jpg" alt="" width="120">
-				
-					<h3 class="module-subtitle">Our most popular menu</h3>
-					<img src="images/pho-vit-10.jpg" alt="" width="120">
-					<h3 class="module-subtitle">Our most popular menu</h3>
+		   </div>
+
+		  <div class="col-sm-5">
+
+			<div class="menu">
+				<div class="row">
+				  <div class="col-sm-8">
+					<h4 class="menu-title">21 Nudeln Tofu</h4>
+					<div class="menu-detail">(Gebratene Nudeln mit Tofu und Gemüse)</div>
+				  </div>
+				  <div class="col-sm-4 menu-price-detail">
+					<h4 class="menu-price">4.90€</h4>
+				  </div>
 				</div>
-	
-				<div class="col-sm-5">
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Wild Mushroom Bucatini with Kale</h4>
-								<div class="menu-detail">Mushroom / Veggie / White Sources</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$10.5</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Lemon and Garlic Green Beans</h4>
-								<div class="menu-detail">Lemon / Garlic / Beans</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$14.5</h4>
-								<div class="menu-label">New</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">LambBeef Kofka Skewers with Tzatziki</h4>
-								<div class="menu-detail">Lamb / Wine / Butter</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$18.5</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Imported Oysters Grill (5 Pieces)</h4>
-								<div class="menu-detail">Oysters / Veggie / Ginger</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$15.9</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Meatloaf with Black Pepper-Honey BBQ</h4>
-								<div class="menu-detail">Pepper / Chicken / Honey</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$16.4</h4>
-							</div>
-						</div>
-					</div>
-	
-				</div><!-- .col-sm-6 -->
-	
-				<div class="col-sm-5">
-	
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Wild Mushroom Bucatini with Kale</h4>
-								<div class="menu-detail">Mushroom / Veggie / White Sources</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$14.5</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Lemon and Garlic Green Beans</h4>
-								<div class="menu-detail">Lemon / Garlic / Beans</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$14.5</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">LambBeef Kofka Skewers with Tzatziki</h4>
-								<div class="menu-detail">Lamb / Wine / Butter</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$18.5</h4>
-								<div class="menu-label">Recommended</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Imported Oysters Grill (5 Pieces)</h4>
-								<div class="menu-detail">Oysters / Veggie / Ginger</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$15.9</h4>
-							</div>
-						</div>
-					</div>
-	
-					<div class="menu">
-						<div class="row">
-							<div class="col-sm-8">
-								<h4 class="menu-title">Meatloaf with Black Pepper-Honey BBQ</h4>
-								<div class="menu-detail">Pepper / Chicken / Honey</div>
-							</div>
-							<div class="col-sm-4 menu-price-detail">
-								<h4 class="menu-price">$16.4</h4>
-							</div>
-						</div>
-					</div>
-	
-				</div><!-- .col-sm-6 -->
-	
-			</div><!-- .row -->
-	
-			
-	
-		</div><!-- .container -->
-	</section>
+			  </div>
+			  <div class="menu">
+				<div class="row">
+				  <div class="col-sm-8">
+					<h4 class="menu-title">23 Nudeln mit Ente</h4>
+					<div class="menu-detail">(Gebratene Nudeln mit knuspriger Ente) </div>
+				  </div>
+				  <div class="col-sm-4 menu-price-detail">
+					<h4 class="menu-price">7,50 €</h4>
+					<div class="menu-label">Neu</div>
+				  </div>
+				</div>
+			  </div>
 
 
+		    </div><!-- .col-sm-6 -->
+
+		  <div class="col-sm-5">
 
 
-	<div class="wrap-list-food">
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/21-nudeln-tofu.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">21 Nudeln Tofu</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratene Nudeln mit Tofu und Gemüse)								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">4.90€</div>
+			<div class="menu">
+				<div class="row">
+				  <div class="col-sm-8">
+					<h4 class="menu-title">22. Nudeln mit Huhn</h4>
+					<div class="menu-detail">(Gebratene Nudeln mit Hühnerbrust und Gemüse)  </div>
+				  </div>
+				  <div class="col-sm-4 menu-price-detail">
+					<h4 class="menu-price">5.50€</h4>
+				  </div>
 				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/22-nudeln-mit-huhn.jpg"></a>
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">22 Nudeln mit Huhn</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratene Nudeln mit Hühnerbrust und Gemüse)								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.50€</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-					<img alt="food" src="images/23-nudeln-mit-ente.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">23 Nudeln mit Ente</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratene Nudeln mit knuspriger Ente) 
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 24 Nudeln mit Rindfleisch</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Gebratene Nudeln mit Rindfleisch & Gemüse
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/25-eierreis-mit-huhn.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">25 Eierreis mit Huhn</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratener Reis mit Eier, Hühnerfleisch und Gemüse)
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/26-eierreis-mit-ente.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">26 Eierreis mit Ente</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratener Eierreis mit knuspriger Ente und Gemüse)
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7.50€</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">27 Eierreis mit Rindfleisch</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Gebratener Eierreis mit Rindfleisch & Gemüse
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/30-tofu-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">30 Tofu mit Gemüse
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Tofu, Gemüse)
-																</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.50€</div>
-				</div>
-			</div>
-		</div>
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 31 Tofu mit Erdnussoße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Tofu, Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">32 Tofu mit Roter Curry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Tofu, Gemüse, Kokosmilch , Basilikum in roter Currywürze) scharf
-																</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5,50 €</div>
-				</div>
-			</div>
-		</div>
+			  </div>
 		
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 33 Tofu,mit Grüner Curry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Tofu, Gemüse, Kokosmilch, Basilikum in grüner Currywürze) scharf
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5,50 €</div>
+			  <div class="menu">
+				<div class="row">
+				  <div class="col-sm-8">
+					<h4 class="menu-title">24. Nudeln mit Rindfleisch</h4>
+					<div class="menu-detail">Gebratene Nudeln mit Rindfleisch & Gemüse</div>
+				  </div>
+				  <div class="col-sm-4 menu-price-detail">
+					<h4 class="menu-price">6.90€</h4>
+				  </div>
 				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">34 Tufu mit Gelber Curry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Tofu, Gemüse, Kokosmilch in gelber Currywürze) leicht scharf																</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5,50 €</div>
-				</div>
-			</div>
-		</div>
-		
+			  </div>
 
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 40 Hühnerbrust mit Gemüse</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust und Gemüse)
-								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/30-tofu-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 41 Hühnerbrust mit Erdnussoße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust, Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)																</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-		
+		  </div><!-- .col-sm-6 -->
 
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 42 Hühnerbrust mit RoterCurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust, Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/30-tofu-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 43 Hühnerbrust mit Grünercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust, Gemüse, Koksmilch und Basilikum in grüner Currywürze) scharf																</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
+	   </div><!-- .row -->
 
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 44 Hühnerbrust mit Gelbercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust, Gemüse, Kokosmilch in gelber Currywürze) leicht scharf								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/30-tofu-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  45 Hühnerbrust mit süß-sauersoße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Reis mit Hühnerbrust, Gemüse in Süß-sauer Soße)														</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/46-gebackene-huehnerbrust-.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 46 Gebackene Hühnerbrust</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebackene Hühnerbrustfilet mit Süß-sauer Soße)								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.50€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  47 Hühnerbrust mit zitronengras
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Hühnerbrust mit Zitronengras, Chili,Paprika und Gemüse)														</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/48-knusprige-haehnchen-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 48 Knusprige Hähnchen mit Gemüse</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Knusprige Hähnchen mit Gemüse und Reis								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/49-huehnerbrustfilet-in-mango.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  49 Hühnerbrustfilet in Mango
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Gebackene Hühnerbrustfilet in Mango soße													</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 50 Schweinefleisch mit Gemüse</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Schweinefleisch gebraten mit verschiedenem Gemüse)							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  51 Schweinefleisch mit Erdnussoße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Schweinefleisch mit Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)													</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 52 Schweinefleisch mit Rotercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Schweinefleisch mit Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  53 Schweinefleisch mit Grünercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Schweinefleisch mit Gemüse, Kokosmilch und Basilikum in grüner Currywürze) scharf												</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  54 Schweinefleisch mit Gelbercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Schweinefleisch mit Gemüse, Kokosmilch in gelber Currywürze) leicht scharf								</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 60 Rindfleisch mit Gemüse
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Gebratenes Rindfleisch mit Gemüse und Cashewkerne )											</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   61 Rindfleisch mit Erdnussoße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/62-rindfleisch-mit-rotercurry.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 62 Rindfleisch mit Rotercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Gemüse, Kokosmilch,Basilikum in roter Currywürze) scharf											</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   61 Rindfleisch mit Erdnussoße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/62-rindfleisch-mit-rotercurry.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 62 Rindfleisch mit Rotercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Gemüse, Kokosmilch,Basilikum in roter Currywürze) scharf											</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   64 Rindfleisch mit Gelbercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Gemüse, Kokosmilch in gelber Currywürze) leicht scharf							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/62-rindfleisch-mit-rotercurry.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 65 Rindfleisch mit süß-sauer Soße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Gemüse in Süß-sauer Soße)											</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   67 Rindfleisch mit Zitronengras</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Zitronengras, Chili, Paprika und Gemüse) scharf							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 68 Rindfleisch mit Zwiebeln
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Rindfleisch mit Zwiebeln, Lauch, Paprika )										</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">6.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/70-knusprige-ente-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   70 Knusprige Ente mit Gemüse</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse und Cashewkerne)							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 71 Knusprige Ente mit Erdnussoße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse, Kokosmilch und Cashewkerne in Erdnusssoße)									</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/72-knusprige-ente-mit-rotercurry.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   72 Knusprige Ente mit rotercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse,Kokosmilch und Basilikum in roter Currywürze) scharf							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  73 Knusprige Ente mit Grünercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse,Kokosmilch und Basilikum in grüner Currywürze) scharf									</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  74 Knusprige Ente mit Gelbercurry</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse,Kokosmilch in gelber Currywürze) leicht scharf							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/75-knusprige-ente-mit-suess-sauer-sosse.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  75 Knusprige Ente mit Süß-sauer soße
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Knusprige Ente mit Gemüse und Bambus in Süß-sauer Soße))										</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">    76 Knusprige Ente mit Mango Soße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Knusprige Ente mit Mango,Kokosmilch mild oder scharf						</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/80-fischfilet-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 80 Fischfilet mit Gemüse
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Fischfilet gebacken mit Gemüse & Cashewkerne									</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/81-fischfilet-mit-erdnussosse.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   81 Fischfilet mit Erdnussoße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Fischfilet gebacken in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne)						</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">  82 Fischfilet mit Rotercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Fischfilet gebacken mit Gemüse, Kokosmilch, Basilikum in roter Currywürze) scharf									</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-		</div>
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/85-fischfilet-mit-suess-sauer-sosse.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   85 Fischfilet mit Süß-sauer Soße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Fischfilet gebacken mit Gemüse in Süß-sauer Soße							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">5.90€</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/90-hummerkrabben-mit-gemuese.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   90 Hummerkrabben mit Gemüse
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Hummerkrabben mit Gemüse, Paprika, Bambus und Cashewkerne)										</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="row list-food">
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/91-hummerkrabben-mit-erdnussosse.jpg">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">    91 Hummerkrabben mit Erdnussoße</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									Hummerkrabben in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne							</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €</div>
-				</div>
-			</div>
-			<div class="col-md-10 col-lg-6">
-				<!-- item food -->
-				<div class="item-food row">
-					<div class="col-12 col-sm-2 img-list-food">
-						<img alt="food" src="images/no-pic.png">
-					</div>
-					<div class="col-12 col-sm-8 text-list-food ">
-							<div class="name-price row">
-								<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">   92 Hummerkrabben mit Rotercurry
-									</a></div>
-								<div class="line-food col">
-									<div class="add-line-run"></div>
-								</div>
-							</div>
-							<div class="row"> 
-								<div class="col-12 col-sm-12 info-food">
-									(Hummerkrabben mit Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf									</div>
-							</div>
-					</div>
-					<div class="price-food col-12 col-sm-2">7,50 €€</div>
-				</div>
-			</div>
-		</div>
-	
-	</div>
-</div>
-
+      </div>
 
 
 
 			<!-- Box -->			
-			<div class="tab-pane fade" id="private-dinner" role="tabpanel" aria-labelledby="tab-private-dinner">
+			<div class="tab-pane fade" id="box" role="tabpanel" aria-labelledby="tab-box">
 
 
 
@@ -1574,9 +311,125 @@
 
 			</div>
 
-			<!-- Dinner -->
 
-			<div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="tab-dinner">
+			<!-- Suppe -->			
+			<div class="tab-pane fade" id="suppe" role="tabpanel" aria-labelledby="tab-suppe">
+
+
+
+				<div class="row" style="padding-top:30px">
+					<div class="col-sm-2">
+		
+					
+						<img  class="zoom img-fluid " src="images/huehnefleisch-suppe.jpg" alt="" width="130">
+						
+					
+					</div>
+		
+					<div class="col-sm-5">
+		
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">1. Hühnefleisch Suppe</h4>
+									<div class="menu-detail">(Hühnerfleisch Suppe mit  Kokosmilch)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">2.50€</h4>
+								</div>
+							</div>
+						</div>
+		
+
+
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">3. Nudeln Suppe</h4>
+									<div class="menu-detail">(Nudeln Suppe mit Hühnerfleisch, scharf)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">2.90€</h4>
+								</div>
+							</div>
+						</div>
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">5. Glasnudeln Suppe</h4>
+									<div class="menu-detail">(Glasnudeln Suppe mit Gemüse und Hühnerfleisch ) </div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">2,90 €</h4>
+								</div>
+							</div>
+						</div>
+	
+		
+					</div><!-- .col-sm-6 -->
+		
+					<div class="col-sm-5">
+
+
+						
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 2. Garnelen Suppe</h4>
+									<div class="menu-detail">(Garnelen Suppe mit Kokosmilch)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">3.00€</h4>
+								</div>
+							</div>
+						</div>
+						
+		
+		
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 4. Wan Tan Suppe</h4>
+									<div class="menu-detail">(Wan Tan Suppe)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">2,50 €</h4>
+								</div>
+							</div>
+						</div>
+					
+
+
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">6. Tofu Suppe</h4>
+									<div class="menu-detail">(Tofu Suppe mit Koriander) </div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">2,50 €</h4>
+								</div>
+							</div>
+						</div>
+		
+		
+					
+						
+		
+					</div><!-- .col-sm-6 -->
+		
+				</div><!-- .row ---->
+
+
+
+			</div>
+
+
+
+
+			<!-- Vorspeise -->
+
+			<div class="tab-pane fade" id="vorspeise" role="tabpanel" aria-labelledby="tab-vorspeise">
 
 
 
@@ -1622,7 +475,7 @@
 						</div>
 						
 	
-	               <div class="menu">
+	                   <div class="menu">
 							<div class="row">
 								<div class="col-sm-8">
 									<h4 class="menu-title">12. Gà bao bột rán giòn</h4>
@@ -1632,8 +485,10 @@
 									<h4 class="menu-price">2.90€</h4>
 							</div>
 						</div>
-					</div>
-					<div class="menu">
+					   </div>
+
+					
+					  <div class="menu">
 						<div class="row">
 							<div class="col-sm-8">
 								<h4 class="menu-title">14. Gỏi cuốn thập cẩm</h4>
@@ -1642,48 +497,24 @@
 							<div class="col-sm-4 menu-price-detail">
 								<h4 class="menu-price">3.90€</h4>
 						</div>
-					</div>
-				</div>
+					    </div>
+				      </div>
+				  
 
-
-				<div class="menu">
-					<div class="row">
+				        <div class="menu">
+					 <div class="row">
 						<div class="col-sm-8">
 							<h4 class="menu-title">15a Gemischter Salat</h4>
 							<div class="menu-detail">	Gemischter Salat mit Hühnerfleisch,Erdnüssen & Basilikum leicht scharf </div>
 						</div>
 						<div class="col-sm-4 menu-price-detail">
 							<h4 class="menu-price">3.90€</h4>
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					</div><!-- .col-sm-6 -->
-		
-
-
-					
-
-
-
-
-
-
-
+					     </div>
+				          </div>
+					   </div> 
+					   
+				     </div>
+					<!-- .col-sm-6 -->
 
 
 					<div class="col-sm-5">
@@ -1736,30 +567,647 @@
 								</div>
 							</div>
 						</div>
+		
+
+
+
+
+
+
+					</div><!-- .col-sm-6 -->
+		
+				</div><!-- .row ---->
+			</div>
+
+
+
+				
+
+
+		<!-- Spezialitäten des Hauses-->
+			<div class="tab-pane fade" id="spezialitaet" role="tabpanel" aria-labelledby="tab-spezilitaet">
+
+
+
+
+						<div class="row" style="padding-top:30px">
+							<div class="col-sm-2">
+				
+							
+								<img  class="zoom img-fluid " src="images/pho-vit-19.jpg" alt="" width="120">
+								
+							
+							</div>
+				
+							<div class="col-sm-5">
+				
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">100- Hühnerfleisch Suppe</h4>
+											<div class="menu-detail">Der Klassiker - Vietnamesische Reisbandnudeln Suppe mit zartem Hühnerfleischstreifen, Ingwer, Lauchzwiebeln, Koriander und Kräuter
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">7.90€</h4>
+										</div>
+									</div>
+								</div>
+				
+		
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title"> 102 – Ente Suppe</h4>
+											<div class="menu-detail">Vietnamesische Reisbandnudeln Suppe mit Knusprige Ente , Ingwer, Lauchzwiebeln, Koriander und Kräuter.</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+								
+		
+				
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">104 -Reisbandnudeln mit Huhn</h4>
+											<div class="menu-detail">Gebratene Reisbandnudeln mit Hühnerfleisch und Gemüse</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+				
+		
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">106 –Bún bò nam bộ</h4>
+											<div class="menu-detail">Reisnudeln auf südvietnamesische Art mit feinen Rindfleischstreifen, frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+				
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">108 Hühnerfleisch Suppe</h4>
+											<div class="menu-detail">Reisnudeln Suppe mit zartem Hühnerfleisch, Zimt, Ingwer, Lauchzwiebeln, Koriander und Kräuter
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+				
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">110 Ente Suppe</h4>
+											<div class="menu-detail">Reisnudeln Suppe mit knusprig Ente , Ingwer, Lauchzwiebeln und Kräuter
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">112 Bún Tôm</h4>
+											<div class="menu-detail">Reisnudeln mit Garnelen,frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+		
+		
+		
+		
+		
+							</div><!-- .col-sm-6 -->
+		
+		
+							<div class="col-sm-5">
+				
+				
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">101 - Rindfleischstreifen Suppe</h4>
+											<div class="menu-detail">Vietnamesische Reisbandnudeln Suppe mit Rindfleischstreifen, Ingwer, Lauchzwiebeln, Koriander und Kräuter. 
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">103 –Tofu Suppe</h4>
+											<div class="menu-detail">Reisbandnudeln Suppe mit Tofu , Ingwer, Lauchzwiebeln und Kräuter </div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">7.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">105 –Gegrilltes Schweinefleisch</h4>
+											<div class="menu-detail">Gegrilltes Schweinefleisch in Fünfgewürze mit Reisnudeln Salat und Aromatische Soße
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+				
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">107 -Bún nem</h4>
+											<div class="menu-detail">Reisnudeln mit knusprig gebackenen mit Hackfleisch und Hummerkrabben gefüllten Frühlingsrollen, frischem Gemüse, Kräutern in Hausgemachten Limetten Dressing
+		
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">109 Rindfleisch Suppe</h4>
+											<div class="menu-detail">Reisnudeln Suppe mit Rindfleischstreifen, Zimt, Ingwer, Lauchzwiebeln, Koriander und Kräuter
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">111 Bún vịt nam bộ</h4>
+											<div class="menu-detail">Reisnudeln auf südvietnamesische Art mit knuspriger Ente, frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing											</div>
+		
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+								<div class="menu">
+									<div class="row">
+										<div class="col-sm-8">
+											<h4 class="menu-title">109 Rindfleisch Suppe</h4>
+											<div class="menu-detail">Reisnudeln Suppe mit Rindfleischstreifen, Zimt, Ingwer, Lauchzwiebeln, Koriander und Kräuter
+											</div>
+										</div>
+										<div class="col-sm-4 menu-price-detail">
+											<h4 class="menu-price">8.90€</h4>
+										</div>
+									</div>
+								</div>
+		
+		
+		
+							</div><!-- .col-sm-6 -->
+				
+						</div><!-- .row ---->
+		
+		
+		
+					
 					
 
 
 
+	        </div>
 
 
 
 
-		
-					</div><!-- .col-sm-6 -->
-		
-				</div><!-- .row ---->
+	
+		<!-- food menu -->
+		<div class="row wrap-food-menu" style="padding-bottom: 20px">
+			<div id="food-menu">
+			  <ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				  <a class="nav-link active" id="home-menu2 " data-toggle="tab" href="#greis" role="tab" aria-controls="greis" aria-expanded="true"><strong>Gebratene Reis</strong></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="tab-reistofu" data-toggle="tab" href="#reistofu" role="tab" aria-controls="reistofu" ><strong>Reis mit Tofu / Hühnerfleisch</strong></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="tab-suppe" data-toggle="tab" href="#reischwein" role="tab" aria-controls="reischwein" ><strong>Reis mit Schweinefleisch</strong></a>
+				</li>
 				
+				
+			  </ul>
+			</div>
+		  </div>
+		
 
-				<div class="wrapper">
-					<div class="ring">
-						<div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
-							<div class="coccoc-alo-ph-circle"></div>
-							<div class="coccoc-alo-ph-circle-fill"></div>
-							<div class="coccoc-alo-ph-img-circle"></div>
-							<span>Anrufen</span>
-						</div>
+<!-- list food -->
+<div class="tab-content" id="myTabContent">
+
+<!-- Menu -->
+<div class="tab-pane fade show active" id="greis" role="tabpanel" aria-labelledby="home-menu2">
+
+
+	<div class="row" style="padding-top:30px">
+		<div class="col-sm-2">
+
+		
+			<img  class="zoom img-fluid " src="images/pho-vit-25.jpg" alt="" width="130">
+			
+		
+		</div>
+
+		<div class="col-sm-5">
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">30. Tofu mit Gemüse</h4>
+						<div class="menu-detail">(Reis mit Tofu, Gemüse)</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">5.50€</h4>
 					</div>
 				</div>
+			</div>
+
+
+
+
+	
+			
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">32 Tofu mit Roter Curry</h4>
+						<div class="menu-detail"> (Reis mit Tofu, Gemüse, Kokosmilch , Basilikum in roter Currywürze) scharf</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">5,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">34 Tufu mit Gelber Curry</h4>
+						<div class="menu-detail">(Reis mit Tofu, Gemüse, Kokosmilch in gelber Currywürze) leicht scharf       </div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">5,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+		</div><!-- .col-sm-6 -->
+
+
+
+		<div class="col-sm-5">
+
+
+			
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">31 Tofu mit Erdnussoße</h4>
+						<div class="menu-detail"> (Reis mit Tofu, Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">5,50 €</h4>
+					</div>
+				</div>
+			</div>
+			
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title"> 33 Tofu,mit Grüner Curry</h4>
+						<div class="menu-detail"> (Reis mit Tofu, Gemüse, Kokosmilch, Basilikum in grüner Currywürze) scharf</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">5,50 €</h4>
+					</div>
+				</div>
+			</div>
+		
+
+
+
+		
+			
+
+		</div><!-- .col-sm-6 -->
+
+	</div><!-- .row ---->
+</div>
+
+
+
+			<!-- Reis mit hühnerfleisch und Schwein -->			
+			<div class="tab-pane fade" id="reistofu" role="tabpanel" aria-labelledby="tab-reistofu">
+				
+				<div class="row" style="padding-top:30px">
+					<div class="col-sm-2">
+			
+					
+						<img  class="zoom img-fluid " src="images/30-tofu-mit-gemuese.jpg" alt="" width="130">
+						
+						<img  class="zoom img-fluid " src="images/49-huehnerbrustfilet-in-mango.jpg" alt="" width="130">
+					</div>
+			
+					<div class="col-sm-5">
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">40 Hühnerbrust mit Gemüse</h4>
+									<div class="menu-detail">(Reis mit Hühnerbrust und Gemüse)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+	
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">42 Hühnerbrust mit RoterCurry</h4>
+									<div class="menu-detail"> (Reis mit Hühnerbrust, Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+			
+			
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">44 Hühnerbrust mit Gelbercurry</h4>
+									<div class="menu-detail">(Reis mit Hühnerbrust, Gemüse, Kokosmilch in gelber Currywürze) leicht scharf</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">46 Gebackene Hühnerbrust</h4>
+									<div class="menu-detail">(Gebackene Hühnerbrustfilet mit Süß-sauer Soße)	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">6.50€</h4>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">48 Knusprige Hähnchen mit Gemüse</h4>
+									<div class="menu-detail">Knusprige Hähnchen mit Gemüse und Reis</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">6.90€</h4>
+								</div>
+							</div>
+						</div>
+			
+					</div><!-- .col-sm-6 -->
+			
+			
+			
+					<div class="col-sm-5">
+			
+			
+						
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">41 Hühnerbrust mit Erdnussoße</h4>
+									<div class="menu-detail"> (Reis mit Hühnerbrust, Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+						
+			
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 43 Hühnerbrust mit Grünercurry</h4>
+									<div class="menu-detail"> (Reis mit Hühnerbrust, Gemüse, Koksmilch und Basilikum in grüner Currywürze) scharf	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+					
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 45 Hühnerbrust mit süß-sauersoße</h4>
+									<div class="menu-detail"> (Reis mit Hühnerbrust, Gemüse in Süß-sauer Soße)	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+					
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 47 Hühnerbrust mit zitronengras</h4>
+									<div class="menu-detail"> (Hühnerbrust mit Zitronengras, Chili,Paprika und Gemüse)	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+					
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 49 Hühnerbrustfilet in Mango</h4>
+									<div class="menu-detail"> Gebackene Hühnerbrustfilet in Mango soße	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+					
+						
+			
+					</div><!-- .col-sm-6 -->
+			
+				</div><!-- .row ---->
+
+
+			</div>
+
+			<!-- Dinner -->
+
+			<div class="tab-pane fade" id="reischwein" role="tabpanel" aria-labelledby="reischwein">
+				
+				<div class="row" style="padding-top:30px">
+					<div class="col-sm-6">
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">50 Schweinefleisch mit Gemüse</h4>
+									<div class="menu-detail">(Schweinefleisch gebraten mit verschiedenem Gemüse)</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+	
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">52 Schweinefleisch mit Rotercurry</h4>
+									<div class="menu-detail"> (Schweinefleisch mit Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf		</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+			
+			
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">54 Schweinefleisch mit Gelbercurry</h4>
+									<div class="menu-detail">(Schweinefleisch mit Gemüse, Kokosmilch in gelber Currywürze) leicht scharf		</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+
+
+			
+					</div><!-- .col-sm-6 -->
+			
+			
+			
+					<div class="col-sm-6">
+			
+			
+						
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 51 Schweinefleisch mit Erdnussoße</h4>
+									<div class="menu-detail"> (Schweinefleisch mit Gemüse, Kokosmilch und Cashewkerne in Erdnussoße)	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+						
+			
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 53 Schweinefleisch mit Grünercurry</h4>
+									<div class="menu-detail"> (Schweinefleisch mit Gemüse, Kokosmilch und Basilikum in grüner Currywürze) scharf	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+			
+						
+			
+					</div><!-- .col-sm-6 -->
+			
+				</div><!-- .row ---->
+
+
 
 			</div>
 			
@@ -1774,358 +1222,306 @@
 
 
 
-			<!-- Spezialitäten des Hauses-->
-			<div class="tab-pane fade" id="dessert" role="tabpanel" aria-labelledby="tab-dessert">
-				<div class="wrap-list-food">
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/huehnerfleisch-suppe.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">100- Hühnerfleisch Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Der Klassiker - Vietnamesische Reisbandnudeln Suppe mit zartem Hühnerfleischstreifen, Ingwer, Lauchzwiebeln, Koriander und Kräuter
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">7.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/rindfleischstreifen-suppe.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 101 - Rindfleischstreifen Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Vietnamesische Reisbandnudeln Suppe mit Rindfleischstreifen, Ingwer, Lauchzwiebeln, Koriander und Kräuter. 
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">102 – Ente Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Vietnamesische Reisbandnudeln Suppe mit Knusprige Ente , Ingwer, Lauchzwiebeln, Koriander und Kräuter.
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">103 –Tofu Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisbandnudeln Suppe mit Tofu , Ingwer, Lauchzwiebeln und Kräuter
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">7.90€</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">104 -Reisbandnudeln mit Huhn</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Gebratene Reisbandnudeln mit Hühnerfleisch und Gemüse   
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€
-							</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/gegrilltes-schweinefleisch.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color">105 –Gegrilltes Schweinefleisch</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Gegrilltes Schweinefleisch in Fünfgewürze mit Reisnudeln Salat und Aromatische Soße
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/bn-b-nam-b.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" >106 –Bún bò nam bộ</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln auf südvietnamesische Art mit feinen Rindfleischstreifen, frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/bn-nem.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html"> 107 -Bún nem</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln mit knusprig gebackenen mit Hackfleisch und Hummerkrabben gefüllten Frühlingsrollen, frischem Gemüse, Kräutern in Hausgemachten Limetten Dressing
-											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" >108 Hühnerfleisch Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln Suppe mit zartem Hühnerfleisch, Zimt, Ingwer, Lauchzwiebeln, Koriander und Kräuter											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html"> 109 Rindfleisch Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln Suppe mit Rindfleischstreifen, Zimt, Ingwer, Lauchzwiebeln, Koriander und Kräuter											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" >110 Ente Suppe</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln Suppe mit knusprig Ente , Ingwer, Lauchzwiebeln und Kräuter											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/bn-vt-nam-b.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 111 Bún vịt nam bộ</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln auf südvietnamesische Art mit knuspriger Ente, frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing											</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row list-food">
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/bn-tom.jpg"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" >112 Bún Tôm</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Reisnudeln mit Garnelen,frischem Gemüse, Erdnüssen, vietnamesischen Kräutern in Hausgemachten Limetten Dressing												</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">8.90€</div>
-							</div>
-						</div>
-						<div class="col-md-10 col-lg-6">
-							<!-- item food -->
-							<div class="item-food row">
-								<div class="col-12 col-sm-2 img-list-food">
-									<a><img alt="food" src="images/no-pic.png"></a>
-								</div>
-								<div class="col-12 col-sm-8 text-list-food ">
-										<div class="name-price row">
-											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color"> 120.Gebackene Bananen</a></div>
-											<div class="line-food col">
-												<div class="add-line-run"></div>
-											</div>
-										</div>
-										<div class="row"> 
-											<div class="col-12 col-sm-12 info-food">
-												Gebackene Bananen mit Honig & Erdnüsse								</div>
-										</div>
-								</div>
-								<div class="price-food col-12 col-sm-2">3.00€</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
 
 			
 			
 		</div>
+	
+
+		  <!-- food menu -->
+		  <div class="row wrap-food-menu" style="padding-bottom: 20px">
+			<div id="food-menu">
+			  <ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				  <a class="nav-link active" id="home-menu3 " data-toggle="tab" href="#reisfisch" role="tab" aria-controls="reisfisch" aria-expanded="true"><strong>Reis mit Rindfleisch / Ente</strong></a>pho-vit-15.jpg
+				</li>
+		
+				<li class="nav-item">
+				  <a class="nav-link" id="tab-reisfisch" data-toggle="tab" href="#reisente" role="tab" aria-controls="reisente"><strong>Reis mit Fisch</strong></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="tab-reishummer" data-toggle="tab" href="#reishummer" role="tab" aria-controls="reishummer"><strong>Reis mit Hummerkrabben</strong></a>
+				</li> 
+			  </ul>
+			</div>
+		  </div>
+		
+
+		<!-- list food -->
+		<div class="tab-content" id="myTabContent">
+
+<!-- Menu -->
+
+
+
+
+
+
+			<!-- Reis mit Fisch -->	
+			<div class="tab-pane fade show active" id="reisfisch" role="tabpanel" aria-labelledby="home-menu3">
+				
+				<div class="row" style="padding-top:30px">
+					<div class="col-sm-2">
+						<img  class="zoom img-fluid " src="images/81-fischfilet-mit-erdnussosse.jpg" alt="" width="130">	
+					</div>
+			
+					<div class="col-sm-5">
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">80 Fischfilet mit Gemüse</h4>
+									<div class="menu-detail">Fischfilet gebacken mit Gemüse & Cashewkerne</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+	
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title">82 Fischfilet mit Rotercurry</h4>
+									<div class="menu-detail">(Fischfilet gebacken mit Gemüse, Kokosmilch, Basilikum in roter Currywürze) scharf		</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+			
+			
+
+
+
+
+
+
+					
+			
+					</div><!-- .col-sm-6 -->
+			
+			
+			
+					<div class="col-sm-5">
+			
+			
+						
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 81 Fischfilet mit Erdnussoße</h4>
+									<div class="menu-detail"> (Fischfilet gebacken in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne)		</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">5.90€</h4>
+								</div>
+							</div>
+						</div>
+						
+			
+			
+						<div class="menu">
+							<div class="row">
+								<div class="col-sm-8">
+									<h4 class="menu-title"> 82a Tintenfisch und Garnelen </h4>
+									<div class="menu-detail"> (mit Gemüse) scharf	</div>
+								</div>
+								<div class="col-sm-4 menu-price-detail">
+									<h4 class="menu-price">8.50€</h4>
+								</div>
+							</div>
+						</div>
+					
+			
+					
+						
+			
+					</div><!-- .col-sm-6 -->
+			
+				</div><!-- .row ---->
+
+	
+		
+</div>
+
+
+
+
+
+
+<!--Reis mit Hummerkrabben ---->
+
+
+
+<div class="tab-pane fade" id="reishummer" role="tabpanel" aria-labelledby="tab-reishummer">
+
+
+	<div class="row" style="padding-top:30px">
+		<div class="col-sm-2">
+
+		
+		
+			
+		
+		</div>
+
+		<div class="col-sm-5">
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">90 Hummerkrabben mit Gemüse</h4>
+						<div class="menu-detail">(Hummerkrabben mit Gemüse, Paprika, Bambus und Cashewkerne)</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+
+
+	
+			
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">92 Hummerkrabben mit Rotercurry</h4>
+						<div class="menu-detail"> (Hummerkrabben mit Gemüse, Kokosmilch und Basilikum in roter Currywürze) scharf	</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title"> 64 Rindfleisch mit Gelbercurry</h4>
+						<div class="menu-detail">(Rindfleisch mit Gemüse, Kokosmilch in gelber Currywürze) leicht scharf	       </div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">6.90€</h4>
+					</div>
+				</div>
+			</div>
+		
+
+		
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">   74 Knusprige Ente mit Gelbercurry</h4>
+						<div class="menu-detail">(Knusprige Ente mit Gemüse,Kokosmilch in gelber Currywürze) leicht scharf	       </div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div><!-- .col-sm-6 -->
+
+
+
+		<div class="col-sm-5">
+
+
+			
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title"> 91 Hummerkrabben mit Erdnussoße</h4>
+						<div class="menu-detail"> Hummerkrabben in Erdnussoße mit Gemüse, Kokosmilch und Cashewkerne	</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+			
+
+
+		
+		
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">93 Hummerkrabben mit Rotercurry</h4>
+						<div class="menu-detail"> (Hummerkrabben mit Gemüse, Kokosmilch und Basilikum in grüner Currywürze) scharf	</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title"> 71 Knusprige Ente mit Erdnussoße</h4>
+						<div class="menu-detail">(Knusprige Ente mit Gemüse, Kokosmilch und Cashewkerne in Erdnusssoße)		       </div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+		
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title">73 Knusprige Ente mit Grünercurry</h4>
+						<div class="menu-detail">(Knusprige Ente mit Gemüse,Kokosmilch und Basilikum in grüner Currywürze) scharf		       </div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu">
+				<div class="row">
+					<div class="col-sm-8">
+						<h4 class="menu-title"> 75 Knusprige Ente mit Süß-sauer soße</h4>
+						<div class="menu-detail">(Knusprige Ente mit Gemüse und Bambus in Süß-sauer Soße)</div>
+					</div>
+					<div class="col-sm-4 menu-price-detail">
+						<h4 class="menu-price">7,50 €</h4>
+					</div>
+				</div>
+			</div>
+
+			
+
+		</div><!-- .col-sm-6 -->
+
+	</div><!-- .row ---->
+</div>
+
+			
+		
 	</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2144,58 +1540,133 @@
 			</div>
 		</div>
 	</div>
+
+
+
 <section id ="speisekarte" class="karte">
 	<div class="container">
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
 			<div class="col-12 title-our-menu">
-				<h2 >Unsere Speisekarte</h2>
-				<h4>
+				<h2 >Gallery</h2>
+				<h5>
 					<strong> Anrufen - Bestellen - Abholen.<br>
-					Tel:08031 2307102.handy:01623249651<br>am Busbahnhof - Innenstadt - In Rosenheim 
-				</strong></h4>
+					<br>am Busbahnhof - Innenstadt - In Rosenheim 
+				</strong></h5>
+				<p class="btn" ><i class="fas fa-phone-volume"></i><span style="margin-left: 10px;">08031 2307102</span><i class="fas fa-phone-volume" style="margin-left: 10px;"></i><span style="margin-left: 10px;">01623249651 </span></p>
+
+				
 			</div>
 		</div>
+		
+			<!-- Page Content -->
+			<div class="container page-top" style="padding-bottom: 30px;">
+		
+		
+				<div class="row">
+		
+		
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-10.jpg" class="zoom img-fluid " alt="">
+							
+						
+						<div class="caption">
+							
+						  </div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-13.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
+					
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-15.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
 
 
-<div class="space"></div>
-<div class="box" style="height: 50px">
-  <div class="row">
-    <div class="col-md">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
-    </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="m-auto on-screen image-box">
-      <img src="images/karte1.jpg" width="320" height="239"class="img-fluid" alt="">
-    </div>
-    <div class="m-auto out-screen image-box">
-      <img src="images/karte2.jpg"width="320" height="239" class="img-fluid" alt="">
-    </div>
-    <div class="m-auto out-screen image-box">
-      <img src="images/karte3.jpg" width="320" height="239"class="img-fluid" alt="">
-    </div>
-    <div class="m-auto out-screen image-box">
-      <img src="images/karte4.jpg" width="320" height="239"class="img-fluid" alt="">
-    </div>
-    <div class="m-auto out-screen image-box">
-      <img src="images/karte5.jpg" width="320" height="239"class="img-fluid" alt="">
-    </div>
-  </div>
+					
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-19.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
+					
+					 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-23.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
+					
+					 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-25.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
+					
+					 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-27.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
+					
+					 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+							<img src="images/pho-vit-30.jpg" class="zoom img-fluid " alt="">
+							
+						
+					</div>
 
-  <div class="box">
 
-  </div>
-</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<img src="images/gebratene-nudeln.PNG" class="zoom img-fluid " alt="">
+						
+					
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<img src="images/pho-vit-23.jpg" class="zoom img-fluid " alt="">
+						
+					
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<img src="images/pho-vit-25.jpg" class="zoom img-fluid " alt="">
+						
+					
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<img src="images/pho-vit-27.jpg" class="zoom img-fluid " alt="">
+						
+					
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<img src="images/pho-vit-30.jpg" class="zoom img-fluid " alt="">
+						
+					
+				</div>
+
+					
+					
+				   
+				   
+			   </div>
+		
+			 
+			  
+		
+			</div>
+		
+		
 
 
 </div>
 </section>
 
-
+<main>
 
 	<!-- Banner -->
 	<div class="parallax-banner" >
@@ -2209,11 +1680,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-<main>
-
 
 
 <section id ="about" class="our-menu" >
@@ -2221,7 +1687,7 @@
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
 			<div class="col-12 title-our-menu">
-				<h2>WILLKOMMEN & XIN CHÀO IM Phở Việt</h2>
+				<h2>WILLKOMMEN & XIN CHÀO IM PHỞ VIỆT</h2>
 			</div>
 		</div>
 
@@ -2230,9 +1696,14 @@
 
 		<!-- Intro -->
 		<div id="home-onepage-intro" class="wrap-intro">
-			<div class="container">
+			<div class="local">
+
+
+
+
+
 				<div class="row">
-					<div class="text-intro  col-lg-7 wow fadeInDown" data-wow-delay="0.5s">
+					<div class="feature-box col-lg-6">
 						<p style="font-size: 16px;">
 							Heutzutage ist die vietnamesische Küche in der europäischen Kultur einfach nicht mehr wegzudenken. Unser Motto: fein, lecker und schnell. Es erwarten Sie einige kulinarische Spezialitäten in unserem kleinen, aber feinen Bistro. Die Auswahl unserer Speisen zeigt die Vielfältigkeit der vietnamesischen Küche. Gerichte mit frisch dampfenden Reis oder Reisnudeln und dazu brutzelnde Fleisch- oder Fischgerichte werden bei uns mit frischen Zutaten zubereitet. 
 							Wir freuen uns auf Ihren Besuch.
@@ -2243,41 +1714,70 @@
 							9h-20h<br>
 							  <strong>Sa:</strong>
 							  12h-20h<br>
-							  <strong>Feiertage:</strong>
+							  <strong>So & Feiertage:</strong>
 					  Ruhetage <br></p>
-
-
+					</div>
+			
+					<div class="feature-box col-lg-6">
+						<img src="images/location.jpg" alt="picture-about-us" width="500px">
 
 					</div>
-<!--                                Öffnungszeiten mobile                                          -->
-
-	            
-
+			
 					
-
-					<div class="wrap-pic-intro  col-lg-5">
-						<div class="row">
-							<div class="col-12">
-								<div class="pic-intro">
-									<img src="images/location.jpg" alt="picture-about-us">
-									<img src="images/local4.jpg" alt="picture-about-us">
-								</div>
-							</div>
-						</div>
-					</div>
-
+			
+			
 				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			</div>
 		</div>
 </section>
 
-s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section  id ="map" class="our-menu" >
 	<div class="container">
 		<!-- title our menu -->
 		<div class="wrap-title-our-menu row">
 			<div class="col-12 title-our-menu">
-				<h2>location</h2>
+				<h2>lOCATION</h2>
 			</div>
 		</div>
 
@@ -2303,9 +1803,9 @@ s
 	<div id ="contact" class="container">
 		<div class="content-footer row">
 			<div class="column-footer col-lg-5 col-md-8 col-sm-7">
-				<h3>Contact information</h3>
+				<h3>Kontakt informationen</h3>
 				<ul>
-					<li>ADDRESSE: Heilig-Geist-Straße 20, 83022 Rosenheim Germany</li>
+					<li>ADDRESSE: Heilig-Geist-Straße 20, 83022 Rosenheim Deutschland</li>
 					<li>TEL: 08031-230 71 02</li>
 					<li>HANDY: 0162-3249651</li>
 				</ul>
@@ -2348,7 +1848,7 @@ s
 							<a href="#speisekarte">Unsere Speisekarte</a>
 						</span>
 					</li>
-					<li><a href="#about">About us</a></li>
+					<li><a href="#about">Über Uns</a></li>
 				</ul>
 				<div class="line-divide second-line"></div>
 			</div>

@@ -122,3 +122,8 @@ $('#next').click(function (){
 		  $(this).removeClass('transition');
 	  });
   });
+
+
+
+
+ 
